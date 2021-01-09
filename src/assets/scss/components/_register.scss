@@ -1,0 +1,53 @@
+.register {
+  background-color: $desaturated-blue;
+  text-align: center;
+  @include laptop() {
+    text-align: left;
+    @include flex();
+  }
+  
+  .content {
+    @include laptop() {
+      width: 50%;
+    }
+
+    .title, .text {
+      color: $light-grayish-blue;
+    }
+    
+    .title {
+      font-size: 2rem;
+      @include laptop() {
+        font-size: 2.5rem;
+      }
+    }
+
+    .text {
+      font-size: 1.4rem;
+      @include laptop() {
+        font-size: 1.5rem;
+        width: 80%;
+      }
+    }
+  }
+
+  form {
+    @include laptop() {
+      width: 50%;
+    }
+
+    .form-group {
+
+      input, button {        
+        width: 90%;
+      }
+
+      button {
+        @include laptop() {
+          width: auto;
+          padding: 2rem 5rem;
+        }
+      }
+    }
+  }
+}

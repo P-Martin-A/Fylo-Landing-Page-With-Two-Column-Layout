@@ -1,0 +1,23 @@
+.navigation {
+  @include size(70%, 100%);
+  @include laptop() {
+    width: 85%;
+  };
+
+  .list {
+    height: 100%;
+    @include flex(center, flex-end);
+
+    .item {
+      margin: 0 .5rem;
+      @include laptop() {
+        margin: 0 5rem;
+      };    
+
+      .link {
+        font-size: 1.5rem;
+        color: $very-dark-blue;
+      }
+    } 
+  }
+}

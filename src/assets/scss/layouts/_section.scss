@@ -1,0 +1,9 @@
+.section {
+  grid-area: section;
+  background: url('../images/bg-curve-mobile.svg') no-repeat top;
+  margin: 0 -2rem;
+  @include laptop() {
+    background: url('../images/bg-curve-desktop.svg') no-repeat top;
+    margin: 0 -5rem;
+  }
+}

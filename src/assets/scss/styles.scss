@@ -1,0 +1,23 @@
+// FONT
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+// TOOLS
+@import './tools/var';
+@import './tools/mixins';
+
+// BASE
+@import './base/base';
+
+// LAYOUTS
+@import './layouts/header';
+@import './layouts/main';
+@import './layouts/section';
+@import './layouts/footer';
+
+// COMPONENTS
+@import './components/navigation';
+@import './components/hero';
+@import './components/about';
+@import './components/register';
+@import './components/social';

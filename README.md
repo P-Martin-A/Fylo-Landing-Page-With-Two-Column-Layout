@@ -1,5 +1,6 @@
-# fylo-landing-page-with-two-column-layout
+# Fylo landing page with two column layout
 
+![Design preview for the Fylo landing page with two column layout challenge](./src/assets/design/desktop-preview.jpg)
 ## Project setup
 ```
 npm install

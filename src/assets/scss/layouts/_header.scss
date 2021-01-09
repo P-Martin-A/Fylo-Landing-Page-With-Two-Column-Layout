@@ -1,0 +1,16 @@
+.header {
+  grid-area: header;
+  @include flex(center, space-between);
+
+  .title {
+    width: 30%;
+    margin-bottom: 0;
+    @include laptop() {
+      width: 15%;
+    };
+
+    .logo {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.footer {
+  grid-area: footer;
+  margin: 0 -2rem;
+  color: $light-grayish-blue;
+  @include laptop() {
+    margin: 0 -5rem;
+  }
+
+  .register, .social {
+    padding: 6rem 4rem;
+  }
+} 

@@ -1,0 +1,95 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+
+  body {
+    font-family: $font-family-body;
+    font-weight: $font-weight-body-400;
+    background-color: $white;
+ 
+    #app {
+      @include grid();
+    }
+
+    .header, .main {
+      padding: 2rem 0;
+      @include laptop() {
+        padding: 0;
+      };
+    }
+
+    header, form {
+      font-family: $font-family;      
+    }
+
+    header {
+      font-weight: $font-weight-400;
+    }
+
+    form {
+      
+      .form-group {
+
+        input, button {
+          font-weight: $font-weight-700;
+          width: 100%;
+        }
+        
+        input {
+          margin-bottom: 2rem;
+          padding: 1.5rem 2rem;
+          font-size: 1.5rem;
+          color: $light-gray;
+          
+          &:focus {
+            color: $black;
+            border-color: $very-dark-blue;
+          }
+        }
+        
+        button { 
+          cursor: pointer;
+          border: none;
+          border-radius: .5rem;
+          font-size: 1.5rem;
+          padding: 1.5rem 0;
+          color: $light-grayish-blue;
+          background-color: $bright-blue;
+
+          &:hover {
+            background-color: $light-bright-blue;
+          }
+        }
+      }
+    }
+
+    .title, .text {
+      margin-bottom: 2.5rem;
+    }
+
+    .title {
+      color: $very-dark-blue;
+    }
+
+    .text {
+      color: $light-gray;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
